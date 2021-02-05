@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cual es tu Indice de Masa Corporal (IMC)</title>
+		<style type="text/css">
+			body
+			{
+				background-color: #dbd5d5; 
+				font-family: sans-serif;
+			}
+			strong 
+			{
+				background-color:#d4a31e;
+			}
+			h1
+			{
+				color: #1e79d4;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Indice de Masa Corporal (IMC)</h1>
+		<h2>Quieres saber tu IMC?</h2>
+		<button onclick="retraso()">Sigue</button>
+		<script type="text/javascript">	
+		function retraso () {
+			setTimeout(function(){
+				var usuario = prompt("Cual es tu peso? (En Kg.)");
+				var metros  = prompt("Cual es tu Altura? (En metros. Ej: 1.80)");
+				var peso    = parseFloat(usuario);
+				var altura  = parseFloat(metros);
+				var imc;
+				imc = peso / (altura * altura);
+				imc = (imc.toFixed(2)); 
+				alert("Tu IMC es " + imc ); },200);
+		}
+		</script>
+	</body>
+	</html>
