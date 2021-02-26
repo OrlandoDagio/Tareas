@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Arreglo</title>
+</head>
+<body>
+    <script>
+        var contador = 0;
+        let arr = [];
+        var inicio = prompt("Captura Valor Inicial");
+        var inicio = parseFloat(inicio)
+        var fin = prompt("Captura Valor Final");
+        var fin = parseFloat(fin)
+
+        if (inicio > fin)
+        {
+            alert("El Valor inicial debe ser menor que el Valor final");
+        }
+
+        else
+        {               
+            do {
+                arr[contador] = inicio;
+                alert("El elemento " + (contador + 1) + " es " + inicio);
+
+                inicio++;
+                contador++;
+                console.log(arr);
+
+	            } while (inicio <= fin)
+        }
+    </script>
+</body>
+</html>
+
